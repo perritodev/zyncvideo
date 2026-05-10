@@ -1,22 +1,81 @@
-# Zync - Pro Audio Sync for DaVinci Resolve
+# Zync — Pro Multi-Camera Audio Sync for DaVinci Resolve
 
-Welcome to the public release repository for **Zync**!
-
-Zync is a lightning-fast, highly accurate multi-camera audio synchronization plugin designed natively for DaVinci Resolve Studio. It automatically detects Variable Frame Rate (VFR) media, handles RAW video formats, and phase-aligns your audio perfectly without ever needing to leave your video editing workspace.
-
-## 🚀 How to Download & Install
-
-Head over to the **[Releases Tab](https://github.com/eresunperro/zyncvideo/releases)** on the right side of this page to download the latest version!
-
-### For Mac Users
-1. Download `Zync_App_Mac.zip` from the Releases page.
-2. Unzip it and move `Zync.app` to your Applications folder.
-3. Open DaVinci Resolve and run the plugin!
-
-### For Windows Users
-1. Download `Zync_Windows_Installer.zip` from the Releases page.
-2. Unzip the folder and double click `install.bat`.
-3. The automated script will handle all dependencies and inject the plugin straight into your DaVinci Resolve installation.
+> **Automatic, frame-accurate audio synchronization for DaVinci Resolve.**
+> No clapper boards. No manual nudging. Just sync.
 
 ---
-*Note: This repository is used exclusively for distributing the compiled public releases of Zync.*
+
+## ✨ Features
+
+- 🎙️ **Multi-source sync** — Match any camera or recorder audio to a master track automatically
+- 🎯 **Frame-accurate alignment** — Sub-frame precision using waveform cross-correlation
+- 📼 **VFR & RAW support** — Handles Variable Frame Rate media, R3D, BRAW, and more
+- 🔀 **Sample rate drift correction** — Compensates for long-recording drift between devices
+- 🎬 **DaVinci timeline builder** — Creates a fully assembled multicam timeline in one click
+- 🌍 **English & Spanish UI** — Fully localized interface
+
+---
+
+## ⬇️ Download
+
+Head to the **[Releases page](https://github.com/eresunperro/zyncvideo/releases)** and download the file for your OS.
+
+---
+
+## 🍎 macOS Installation
+
+> **Requires:** DaVinci Resolve 18 or 19 with **External Scripting** enabled.
+
+1. Download `Zync_App_Mac.zip` from the Releases page.
+2. Unzip it — you'll get `Zync.app`.
+3. **Right-click → Open** the first time (macOS Gatekeeper requires this once).
+4. Keep DaVinci Resolve open in the background and click **Sync**!
+
+---
+
+## 🪟 Windows Installation
+
+> **Requires:** DaVinci Resolve 18 or 19 with **External Scripting** enabled and **Python 3.10** installed.
+
+1. Download `Zync.exe` from the Releases page.
+2. Double-click `Zync.exe` to launch — no installation needed.
+3. If Windows Defender shows a warning, click **More info → Run anyway**.
+4. Keep DaVinci Resolve open in the background and click **Sync**!
+
+---
+
+## ⚙️ Enable External Scripting in DaVinci Resolve
+
+Zync connects to DaVinci Resolve via its built-in scripting API. You need to enable it once:
+
+1. Open DaVinci Resolve.
+2. Go to **DaVinci Resolve → Preferences** (Mac) or **Edit → Preferences** (Windows).
+3. Click the **General** tab.
+4. Set **External scripting using** to **Local**.
+5. Restart DaVinci Resolve.
+
+---
+
+## 🛠️ Troubleshooting
+
+| Problem | Fix |
+|---|---|
+| "Cannot connect to DaVinci" | Make sure DaVinci Resolve is open and External Scripting is set to **Local** |
+| App won't open on Mac | Right-click → Open instead of double-clicking |
+| Windows Defender warning | Click **More info → Run anyway** — this is normal for unsigned apps |
+| No timelines appear | Open a project in DaVinci Resolve first |
+
+---
+
+## 📋 System Requirements
+
+| | Mac | Windows |
+|---|---|---|
+| **OS** | macOS 12+ | Windows 10/11 |
+| **DaVinci Resolve** | 18 or 19 | 18 or 19 |
+| **Python** | Not required (bundled) | 3.10 recommended |
+| **RAM** | 8 GB+ | 8 GB+ |
+
+---
+
+*This repository is used exclusively for distributing compiled public releases of Zync. Source code is proprietary.*
