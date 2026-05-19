@@ -4,14 +4,14 @@
 
 ---
 
-## 🎯 Why Zync?
+## ⚡ Why Zync?
 
 | Benefit | Impact |
 |---------|--------|
-| **Save Hours Per Day** | Automated sync eliminates manual audio alignment — sync 10+ cameras in minutes |
-| **Frame-Accurate Results** | Sub-frame precision using AI waveform analysis |
-| **Enterprise-Ready** | Handles VFR, RAW, and long-form multi-day recordings with drift correction |
-| **Seamless Integration** | Native DaVinci Resolve extension — no external apps or context switching |
+| ⏱️ **Save Hours Per Day** | Automated sync eliminates manual audio alignment — sync 10+ cameras in minutes |
+| 🎯 **Frame-Accurate Results** | Sub-frame precision using AI waveform analysis |
+| 🏢 **Enterprise-Ready** | Handles VFR, RAW, and long-form multi-day recordings with drift correction |
+| 🔗 **Seamless Integration** | Native DaVinci Resolve extension — no external apps or context switching |
 
 ---
 
