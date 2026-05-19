@@ -56,6 +56,41 @@ sudo installer -pkg Zync-DaVinci-Installer.pkg -target /
 
 ---
 
+## 🎬 How to Use
+
+### Step 1: Open Zync in DaVinci Resolve
+1. Create or open a DaVinci Resolve project
+2. Import your camera clips and master audio file into the Media Pool
+3. Go to **Workspace → Workflow Integrations → Zync**
+
+### Step 2: Select Your Media
+- **Master Audio:** Click **Browse** and select your primary audio track (must be 40+ seconds)
+- **Camera Clips:** Check the boxes next to the camera clips you want to sync
+- **Output Timeline:** Give your synced timeline a name (e.g., "SYNC_MULTICAM")
+
+### Step 3: Click Sync
+- Zync analyzes the audio waveforms and automatically aligns all clips to your master
+- Progress appears in the log window
+- Once complete, a new timeline is created with all clips synced
+
+### Step 4: Review & Edit
+- New timeline appears in your project automatically
+- All clips are positioned frame-accurately to match the master audio
+- Make any fine adjustments in the timeline if needed
+
+**That's it.** Your multicam timeline is ready to edit.
+
+---
+
+## 💡 Tips
+
+- **Master audio should be at least 40 seconds long** for reliable sync
+- **All clips must overlap with the master audio** (even partially)
+- **Handles long recordings:** Works with hours of footage, including drift correction
+- **Multiple masters:** Run Zync multiple times with different master files if needed
+
+---
+
 ## ⚙️ Enable External Scripting (One-Time Setup)
 
 1. Open DaVinci Resolve → **Preferences**
